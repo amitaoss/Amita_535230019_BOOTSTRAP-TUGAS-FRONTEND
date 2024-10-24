@@ -1,0 +1,414 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('heroimage.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-content .lead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn-outline-light {
+    border: 2px solid #fff;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn-outline-light:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff; 
+    z-index: 9999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.btn {
+    margin-top: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #ffdf00 !important;
+}
+
+/* Carousel Styles */
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.info {
+    background-color: #82a4c8;
+    padding: 60px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.info button {
+    margin-top: 20px;
+}
+
+.info img {
+    max-width: 60%;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+.info .container {
+    background-color: #f4f4f4; 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+
+
+#about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#about img {
+    width: 90%;  
+    border-radius: 50%; 
+    margin-top: 20px;
+  }
+
+.about-icons i {
+    color: #2E86C1;
+    margin: 0 10px;
+  }
+  
+
+.about-icons i:hover {
+    transform: scale(1.2); 
+}
+
+.beauty h2{
+    color: #fff;
+}
+  
+.beauty p{
+    color: #fff;
+}
+
+.fashion,
+.health {
+    background-color: #f8f9fa;
+}
+
+.carousel-item img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.carousel-inner .carousel-item img {
+    max-height: 450px;
+    object-fit: contain; 
+}
+
+
+.fashion .carousel-item img,
+.health .carousel-item img {
+    object-fit: contain;
+}
+
+/* Beauty Section */
+.beauty1, .beauty2, .beauty3, .beauty4 {
+    margin-bottom: 30px;
+}
+
+.container-beauty {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom */
+    grid-gap: 0px; 
+    
+}
+
+
+.beauty1 img,
+.beauty2 img,
+.beauty3 img,
+.beauty4 img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background: #82a4c8;
+}
+
+#contact h2, #subscribe h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+  
+#contact form input, #contact form textarea, #subscribe form input {
+    border-radius: 5px;
+}
+  
+#contact form button, #subscribe form button {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+#contact form button:hover, #subscribe form button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Subscribe Section */
+#subscribe {
+    padding: 50px 0;
+}
+  
+#subscribe input {
+    padding: 10px 15px;
+}
+  
+#subscribe button {
+    padding: 10px 20px;
+}
+
+
+
+
+.modal-content {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+
+footer .social-icons a:hover {
+    color: #ffdf00; 
+    transform: scale(1.2); 
+}
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+    }
+}
+
+
+.btn-primary {
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .beauty1 img,
+    .beauty2 img,
+    .beauty3 img,
+    .beauty4 img {
+        max-height: 300px;
+    }
+
+    #subscribe {
+        padding: 30px 0;
+    }
+}
+
+
+

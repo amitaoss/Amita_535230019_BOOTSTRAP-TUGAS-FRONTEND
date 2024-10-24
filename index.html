@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lifestyle Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" tabindex="0">
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lifestyle Vibes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Welcome to Lifestyle Hub</h1>
+            <p class="lead">Discover trends that elevate your life and wellness</p>
+            <a href="#about" class="btn btn-lg btn-outline-light">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Carousel Home Section -->
+    <section id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="familypic.jpg" class="d-block w-100" alt="Family Lifestyle">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Explore Family Lifestyle</h5>
+                    <p>Embrace the joy of balanced living.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="yoga.png" class="d-block w-100" alt="Yoga and Wellness">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Stay Balanced and Healthy</h5>
+                    <p>Find peace through mindfulness and wellness.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="fashion.jpg" class="d-block w-100" alt="Fashion Trends">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Join the Fashion Wave</h5>
+                    <p>Update your style with the latest trends.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    
+    <!-- Info Section -->
+<section class="info py-5 text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>What's New in Wellness?</h2>
+          <p>Explore the latest innovations in holistic wellness, from mindful meditation practices to sustainable fashion trends. Whether you're looking for fitness tips, nutrition advice, or ways to improve your mental health, we've got you covered.</p>
+          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#moreInfoModal">Learn More</button>
+        </div>
+        <div class="col-md-6">
+          <img src="infooo.jpeg" class="img-fluid rounded" alt="Wellness Lifestyle">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+   <!-- About Section -->
+<section id="about" class="py-5 text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Gambar di sebelah kiri -->
+        <div class="col-md-6">
+          <img src="aboutus.jpeg" class="img-fluid rounded-circle" alt="Team Photo">
+        </div>
+        <!-- Teks di sebelah kanan -->
+        <div class="col-md-6 text-md-start">
+          <h2>About Us</h2>
+          <p>We are dedicated to bringing you the freshest ideas in wellness, fashion, and beauty. Our team is passionate about inspiring positive changes in every aspect of your life, from health to lifestyle.</p>
+          <div class="about-icons mt-4">
+            <i class="fa fa-heartbeat fa-2x"></i>
+            <i class="fa fa-leaf fa-2x"></i>
+            <i class="fa fa-gem fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+    
+     <!--Carousel for Health tips-->
+    <section class="fashion py-5 bg-light text-center">
+        <div class="container">
+            <h2>Explore Latest Health & Fitness Tips</h2>
+            <p>In an era where health and fitness have become central to daily living, keeping up with the latest tips and trends is essential for maintaining a balanced lifestyle. Whether you're looking to enhance your workout routine, improve your nutrition, or simply adopt healthier habits, exploring the latest health and fitness tips can offer valuable insights. From innovative exercise techniques to mindful eating strategies, these tips can help you stay motivated and achieve your wellness goals more effectively. Dive into the latest research, expert advice, and practical strategies to stay ahead in your health and fitness journey.</p>
+            <section id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="health1.jpeg" class="d-block w-100" alt="...">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="health2.jpeg" class="d-block w-100" alt="...">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="health3.jpeg" class="d-block w-100" alt="...">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="health4.jpeg" class="d-block w-100" alt="...">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="health5.jpeg" class="d-block w-100" alt="...">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="health6.jpeg" class="d-block w-100" alt="...">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="health7.jpeg" class="d-block w-100" alt="...">
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+
+        </div>
+    </section>
+
+
+   <!-- Explore Fashion & Trends -->
+<section class="fashion py-5 bg-light text-center">
+    <div class="container">
+        <h2>Explore Latest Fashion Trends</h2>
+        <p>Exploring the latest fashion trends is a great way to refresh your style and discover new inspiration. Each season brings fresh innovations and iconic looks, often inspired by celebrity outfits that set the tone for what's in vogue. Whether it's chic streetwear, bold accessories, or elegant styles, these trends provide endless ideas for elevating your everyday wardrobe. By keeping an eye on celebrity-inspired outfits, you can find creative ways to mix and match, creating a look that feels both current and uniquely your own. Stay ahead of the curve and experiment with the latest trends to express your personal style.</p>
+        
+        <!-- Carousel for Fashion Women -->
+        <section id="carouselWomen" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="fashionwomen1.jpeg" class="d-block w-100" alt="Fashion Women 1">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionwomen2.jpeg" class="d-block w-100" alt="Fashion Women 2">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionwomen3.jpeg" class="d-block w-100" alt="Fashion Women 3">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionwomen4.jpeg" class="d-block w-100" alt="Fashion Women 4">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionwomen5.jpeg" class="d-block w-100" alt="Fashion Women 5">
+                    
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselWomen" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselWomen" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Carousel for Fashion Men -->
+        <section id="carouselMen" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="fashionmen1.jpeg" class="d-block w-100" alt="Fashion Men 1">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionmen2.jpeg" class="d-block w-100" alt="Fashion Men 2">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionmen3.jpeg" class="d-block w-100" alt="Fashion Men 3">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionmen4.jpeg" class="d-block w-100" alt="Fashion Men 4">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="fashionmen5.jpeg" class="d-block w-100" alt="Fashion Men 5">
+                    
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMen" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMen" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+    </div>
+</section>
+
+    
+    <section class="beauty py-5 bg-dark text-center">
+        <h2>Explore Latest Beauty Tips</h2>
+            <p>Exploring the latest beauty tips can help you elevate your routine and achieve a flawless look with ease. From glowing skin to effortlessly chic makeup, many of today’s beauty trends are inspired by supermodel secrets. For example, supermodel-inspired tips often focus on skincare as the foundation for any beauty routine, emphasizing hydration, minimal makeup, and a natural glow. You can also adopt techniques like facial massages, balanced workout & diet, contouring, or achieving that perfect runway-ready hairstyle. By incorporating these tips into your routine, you can achieve a fresh, radiant look that captures the essence of modern beauty.</p>
+        <div class="container-beauty">
+            
+            <div class="beauty1">
+                <img src="beauty1.jfif" alt="Beauty 1">
+            </div>
+            <div class="beauty2">
+                <img src="beauty2.jfif"  alt="Beauty 2">
+            </div>
+            <div class="beauty4">
+                <img src="beauty4.jpeg"  alt="Beauty 3">
+            </div>
+            <div class="beauty3">
+                <img src="beauty3.jpeg"  alt="Beauty 4">
+            </div>
+            
+
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="article1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthy Living Tips</h5>
+                        <p class="card-text">Discover simple tips for a healthier life, from diet to exercise.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="article2.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Fashion Trends</h5>
+                        <p class="card-text">Stay updated with the latest fashion trends and elevate your style.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="article3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Amazing Beauty Tips</h5>
+                        <p class="card-text">Explore the latest beauty tips and supermodel-inspired beauty secrets to achieve a stunning look to be the best version of yourself and gain confidence.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contact Us Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <p class="text-center">If you have any questions or just want to say hello, feel free to reach out.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Subscribe Section -->
+<section id="subscribe" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2>Subscribe Now</h2>
+      <p>Don't miss out! Join our community for the latest updates on wellness and lifestyle.</p>
+      <form class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+    <!-- Modal -->
+    <div class="modal fade" id="moreInfoModal" tabindex="-1" aria-labelledby="moreInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="moreInfoModalLabel">More Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Explore everything from fitness, fashion, wellness, and beauty trends. Join our vibrant community today!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Lifestyle Hub | All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none'; // Sembunyikan preloader setelah halaman dimuat
+        });
+        </script>
+        
+</body>
+</html>
+
